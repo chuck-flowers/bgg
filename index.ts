@@ -7,12 +7,12 @@ var mimeInterceptor = require('rest/interceptor/mime');
 var retryInterceptor = require('rest/interceptor/retry');
 var timeoutInterceptor = require('rest/interceptor/timeout');
 
-type Config = {
+export type Config = {
 	timeout?: any;
 	retry?: any;
 };
 
-module.exports = function(config: Config) {
+export default function(config: Config) {
 
 	var config = config || {};
 

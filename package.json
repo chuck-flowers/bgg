@@ -4,6 +4,7 @@
   "version": "1.0.1",
   "description": "BoardGameGeek.com API client",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "compile": "tsc",
     "test": "ts-node test/index.ts"

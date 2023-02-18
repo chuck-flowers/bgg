@@ -1,11 +1,11 @@
 import rest from 'rest';
 import interceptor from './interceptor';
 
-var errorCodeInterceptor = require('rest/interceptor/errorCode');
-var pathPrefixInterceptor = require('rest/interceptor/pathPrefix');
-var mimeInterceptor = require('rest/interceptor/mime');
-var retryInterceptor = require('rest/interceptor/retry');
-var timeoutInterceptor = require('rest/interceptor/timeout');
+import errorCodeInterceptor from 'rest/interceptor/errorCode';
+import pathPrefixInterceptor from 'rest/interceptor/pathPrefix';
+import mimeInterceptor from 'rest/interceptor/mime';
+import retryInterceptor from 'rest/interceptor/retry';
+import timeoutInterceptor from 'rest/interceptor/timeout';
 
 export type Config = {
 	timeout?: any;

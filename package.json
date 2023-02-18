@@ -1,8 +1,9 @@
 {
+  "$schema": "https://json.schemastore.org/package.json",
   "name": "bgg",
   "version": "1.0.1",
   "description": "BoardGameGeek.com API client",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "compile": "tsc",
     "test": "ts-node test/index.ts"

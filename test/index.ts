@@ -1,8 +1,10 @@
-var bgg = require('../')();
+import bgg from '..';
+var client = bgg({});
 
-var log = console.log.bind(console);
-var error = console.error.bind(console);
+client('user', { name: 'monteslu', guilds: 1 })
+	.then(response => {
+		console.log('Success', response.entity);
+	}, err => {
+		console.error('Failed', err);
+	});
 
-
-bgg('user', {name: 'monteslu', guilds: 1})
-  .then(log, error);
